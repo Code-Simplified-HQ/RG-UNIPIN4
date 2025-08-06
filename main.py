@@ -234,7 +234,7 @@ BOT_PREFIX = "R"
 # Telegram API Credentials
 api_id = 23434691
 api_hash = 'e9dc74b46e9ebb79e8cbbb2e9f953355'
-phone_number = '+8801754631539'
+phone_number = '+8801825440605'
 #subscribe
 BD_TIMEZONE = pytz.timezone("Asia/Dhaka")
 
