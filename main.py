@@ -334,7 +334,7 @@ def create_bkash_payment(amount, user_id):
     payload = {
         "mode": "0011",
         "payerReference": str(user_id),
-        "callbackURL": "",
+        "callbackURL": "https://rg-unipin4.onrender.com/callback",
         "amount": str(amount),
         "currency": "BDT",
         "intent": "sale",
@@ -4732,8 +4732,8 @@ async def pay(event):
                 logger.info(f"Non-admin or non-private chat, using sender {user_id} for /pay")
 
             amount = int(event.pattern_match.group(1))
-            success_url = "/drutopay_callback"
-            cancel_url = ""
+            success_url = "https://rg-unipin4.onrender.com/drutopay_callback"
+            cancel_url = "https://rg-unipin4.onrender.com/drutopay_callback"
             logger.info(f"Creating payment for user {user_id} with amount {amount}")
             payment_response = create_drutopay_payment(user_id, amount, success_url, cancel_url)
             if payment_response:
